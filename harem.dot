@@ -32,10 +32,10 @@ graph harem {
   { rank = sink;
     Legend [shape=none, label=<
       <table border="0">
-        <tr><td>Official relationship</td><td width="100px" bgcolor="green"></td></tr>
-        <tr><td>Things developing</td><td width="100px" bgcolor="blue"></td></tr>
-        <tr><td>Friends with benefits</td><td width="100px" bgcolor="red"></td></tr>
-        <tr><td>Honorary harem member (friends)</td><td width="100px" bgcolor="orange"></td></tr>
+        <tr><td><font face="sans-serif">Official relationship</font></td><td width="100px" bgcolor="green"></td></tr>
+        <tr><td><font face="sans-serif">Things developing</font></td><td width="100px" bgcolor="blue"></td></tr>
+        <tr><td><font face="sans-serif">Friends with benefits</font></td><td width="100px" bgcolor="red"></td></tr>
+        <tr><td><font face="sans-serif">Honorary harem member (friends)</font></td><td width="100px" bgcolor="orange"></td></tr>
       </table>
     >];
   }
