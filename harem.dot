@@ -23,4 +23,14 @@ graph harem {
   patrick -- olivia [color=orange]
   tuxedage [label="Tuxedage"]
   patrick -- tuxedage [color=orange]
+  { rank = sink;
+    Legend [label=<
+      <table>
+        <tr><td><font color="green">Official relationship</font></td></tr>
+        <tr><td><font color="blue">Things developing</font></td></tr>
+        <tr><td><font color="red">Friends with benefits</font></td></tr>
+        <tr><td><font color="orange">Honorary harem member (friends)</font></td></tr>
+      </table>
+    >];
+  }
 }
