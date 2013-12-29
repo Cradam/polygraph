@@ -1,7 +1,10 @@
-%.dot: ps png
+INFILES 	= $(shell find . -name '*.dot')
+OUTFILES 	= $(INFILES:.dot=.png)
 
-ps: 
-	dot -Tps harem.dot -o harem.ps
+all: $(OUTFILES)
 
-png:
-	convert harem.ps harem.png
+%.png: %.dot
+	dot -Tpng $< -o $@
+
+clean:
+	git clean -Xfd
