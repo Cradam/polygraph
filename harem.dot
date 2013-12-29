@@ -17,6 +17,7 @@ graph harem {
   patrick -- fred [color=green]
   adam [label="Adam"]
   john [label="John"]
+  fred -- john [color=green]
   fred -- adam -- john [color=green]
   rembane [label="Rembane"]
   patrick -- rembane [color=blue]
@@ -26,6 +27,8 @@ graph harem {
   patrick -- olivia [color=orange]
   tuxedage [label="Tuxedage"]
   patrick -- tuxedage [color=orange]
+  soundlogic [label="SoundLogic"]
+  patrick -- soundlogic [color=blue]
   { rank = sink;
     Legend [shape=none, label=<
       <table border="0">
