@@ -27,6 +27,8 @@ graph harem {
   patrick -- olivia [color=orange]
   tuxedage [label="Tuxedage"]
   patrick -- tuxedage [color=orange]
+  soundlogic [label="SoundLogic"]
+  patrick -- soundlogic [color=blue]
   { rank = sink;
     Legend [label=<
       <table>
