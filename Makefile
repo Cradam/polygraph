@@ -1,5 +1,5 @@
-INFILES 	= $(shell find . -name '*.dot')
-OUTFILES 	= $(INFILES:.dot=.png)
+INFILES	= $(shell find . -name '*.dot')
+OUTFILES	= $(INFILES:.dot=.png)
 
 all: $(OUTFILES)
 
