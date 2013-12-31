@@ -9,8 +9,7 @@ graph harem {
   kiandra [label="Kiandra"]
   patrick -- kiandra [color=blue]
   lara [label="Lara"]
-  patrick -- lara [color=blue]
-  kiandra -- lara [color=blue]
+    kiandra -- lara [color=green]
   badben [label="Bad Ben"]
   badben -- kiandra [color=green]
   fred [label="Fred"]
@@ -31,6 +30,8 @@ graph harem {
   patrick -- soundlogic [color=blue]
   scott [label="Scott"]
   patrick -- scott [color=red]
+  ian [label="Ian"]
+  patrick -- ian [color=blue]
   { rank = sink;
     Legend [shape=none, label=<
       <table border="0">
