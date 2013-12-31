@@ -9,7 +9,7 @@ graph harem {
   kiandra [label="Kiandra"]
   patrick -- kiandra [color=blue]
   lara [label="Lara"]
-  kiandra -- lara [color=green]
+  kiandra -- lara [color=blue]
   badben [label="Bad Ben"]
   badben -- kiandra [color=green]
   fred [label="Fred"]
