@@ -11,7 +11,7 @@ class Dot
   end
   def connections
     @raw.lines
-        .map { |x| x.match /(\w+) -- (\w+) \[color=(\w+)\]/ }
+        .map { |x| x.match /(\w+) *-- *(\w+) *\[color=(\w+)\]/ }
         .compact
         .map { |x| x[1..3] }
   end
