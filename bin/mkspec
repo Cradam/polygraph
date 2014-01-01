@@ -1,4 +1,6 @@
-#!/usr/bin/env ruby -rjson
+#!/usr/bin/env ruby 
+
+require 'json'
 
 class Dot
   attr_accessor :raw
@@ -31,5 +33,5 @@ class Specification
   end
 end
 
-spec = Specification.new Dot.new('./src/harem.dot')
-File.open('spec.js', 'w') { |file| file.write spec.to_js }
+spec = Specification.new Dot.new(ARGV.first)
+STDOUT.puts spec.to_js
