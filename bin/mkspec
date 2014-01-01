@@ -9,9 +9,9 @@ class Dot
   end
   def nodes
     @raw.lines
-        .map { |x| x.match /(?<=label=")[^"]+/ }
+        .map { |x| x.match /([^ \]]+) *\[label=/}
         .compact
-        .map { |x| x[0] }
+        .map { |x| x[1] }
   end
   def connections
     @raw.lines
