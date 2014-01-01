@@ -1,3 +1,8 @@
+window.requestAnimationFrame = window.requestAnimationFrame 
+                            || window.webkitRequestAnimationFrame
+                            || window.mozRequestAnimationFrame
+                            || window.msRequestAnimationFrame;
+
 var polygraph = function(spec) {
     function drawEllipseByCenter(ctx, cx, cy, w, h) {
         drawEllipse(ctx, cx - w/2.0, cy - h/2.0, w, h);
@@ -198,12 +203,12 @@ var polygraph = function(spec) {
         })
     }
     redraw()
-    window.requestAnimationFrame(function anim() {
+    requestAnimationFrame(function anim() {
         recalc()
         redraw()
         
         if (frame++ > 1e3) return
         
-        window.requestAnimationFrame(anim)
+        requestAnimationFrame(anim)
     })
 };
