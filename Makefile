@@ -1,5 +1,5 @@
-INFILES	= $(shell find . -name '*.dot')
-OUTFILES	= $(INFILES:.dot=.png) public/spec.json public/legend.html
+INFILES	:= $(shell find . -name '*.dot')
+OUTFILES := $(INFILES:.dot=.png) public/spec.json public/legend.html
 
 all: $(OUTFILES)
 
