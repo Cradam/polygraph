@@ -6,7 +6,7 @@ all: $(OUTFILES)
 .PHONY: all clean 
 
 public/spec.json: data/harem.dot
-	bin/mkspec data/harem.dot > public/spec.json
+	bin/mkspec data/harem.dot > public/assets/json/spec.json
 
 public/legend.html: data/harem.dot
 	bin/mklegend data/harem.dot > public/legend.html
