@@ -81,7 +81,7 @@ var polygraph = function(spec) {
     ctx.fillStyle = "rgb(50, 50, 50)"
     ctx.textAlign = "center"
     ctx.textBaseline = "middle"
-    ctx.font = "1.5em Cookie"
+    ctx.font = "1.5em sans-serif"
     
     var NODES = spec.nodes.map(function(name, i) {
         var n = new Node(ctx, name)
