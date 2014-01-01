@@ -1,7 +1,9 @@
-INFILES	:= $(shell find . -name '*.dot')
+INFILES := $(shell find . -name '*.dot')
 OUTFILES := $(INFILES:.dot=.png) public/spec.json public/legend.html
 
 all: $(OUTFILES)
+
+.PHONY: all clean 
 
 public/spec.json: data/harem.dot
 	bin/mkspec data/harem.dot > public/spec.json
