@@ -25,13 +25,12 @@ class Specification
   def initialize dot
     @dot = dot
   end
-  def to_js
-    json = { nodes: @dot.nodes,
+  def to_json
+    { nodes: @dot.nodes,
       connections: @dot.connections
     }.to_json
-    return ['var spec=', json].join
   end
 end
 
 spec = Specification.new Dot.new(ARGV.first)
-STDOUT.puts spec.to_js
+STDOUT.puts spec.to_json

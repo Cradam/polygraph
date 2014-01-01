@@ -1,8 +1,7 @@
 <html>
   <head>
     <title>Polygraph</title>
-    <script src="spec.js"></script>
-    <script src="polygraph.js"></script>
+    <script src="js/polygraph.js"></script>
     <style>
 		* {
 			margin: 0px;
@@ -21,6 +20,13 @@
   <body>
     <canvas id="polygraph"></canvas>
     <script>
+      function get(url) {
+        var request = new XMLHttpRequest();
+        request.open("GET", url, false);
+        request.send(null);
+        return request.responseText;
+      };
+      var spec = JSON.parse(get('spec.json'));
       polygraph(spec);
     </script>
   </body>
