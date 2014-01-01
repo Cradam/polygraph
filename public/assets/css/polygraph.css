@@ -1,0 +1,12 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: #d5cbbe;
+}
+canvas {
+  display: block;
+  margin: 5% auto 0;
+  width: 80%;
+}
