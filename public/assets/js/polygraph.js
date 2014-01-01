@@ -110,9 +110,6 @@ var polygraph = function(spec) {
     function redraw() {
         ctx.clearRect(0, 0, dims[0], dims[1])
         ctx.strokeStyle = "rgb(50, 50, 50)"
-       
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.4)'
-        ctx.fill()
  
         NODES.forEach(function(n) {
             n.draw()
