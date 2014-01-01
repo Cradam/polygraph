@@ -1,8 +1,8 @@
-all: public/assets/img/harem.svg public/spec.json public/legend.html
+all: public/assets/img/harem.svg public/assets/spec.json public/legend.html
 
 .PHONY: all clean 
 
-public/spec.json: data/harem.dot
+public/assets/spec.json: data/harem.dot
 	bin/mkspec data/harem.dot > public/assets/json/spec.json
 
 public/legend.html: data/harem.dot
