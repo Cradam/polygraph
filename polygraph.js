@@ -1,4 +1,4 @@
-void function() {
+var polygraph = function(spec) {
     function drawEllipseByCenter(ctx, cx, cy, w, h) {
         drawEllipse(ctx, cx - w/2.0, cy - h/2.0, w, h);
     }
@@ -20,31 +20,6 @@ void function() {
         ctx.bezierCurveTo(xm - ox, ye, x, ym + oy, x, ym);
         ctx.closePath();
         ctx.stroke();
-    }
-    
-    var spec = {
-        nodes: ["Patrick", "Leo", "vi", "Fred", "Adam", "John", "Rembane", "Olivia", "Katla",
-                "Tuxedage", "SoundLogic", "Scott", "Ian", "Ben", "Lara", "Kiandra", "Bad Ben"
-        ],
-        connections: [
-            ["Patrick","vi", "green"],
-            ["Patrick", "Leo", "green"],
-            ["Patrick", "Ben", "red"],
-            ["Patrick", "Kiandra", "blue"],
-            ["Patrick", "Fred", "green"],
-            ["Patrick", "Rembane", "blue"],
-            ["Patrick", "Katla", "blue"],
-            ["Patrick", "Olivia", "orange"],
-            ["Patrick", "Tuxedage", "orange"],
-            ["Patrick", "SoundLogic", "blue"],
-            ["Patrick", "Scott", "red"],
-            ["Patrick", "Ian", "blue"],
-            ["Kiandra", "Lara", "blue"],
-            ["Bad Ben", "Kiandra", "green"],
-            ["Fred", "John", "green"],
-            ["Fred", "Adam", "green"],
-            ["Adam", "John", "green"]
-        ]
     }
 
     function Node(ctx, name) {
@@ -231,4 +206,4 @@ void function() {
         
         window.requestAnimationFrame(anim)
     })
-}()
+};
