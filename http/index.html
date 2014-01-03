@@ -3,6 +3,7 @@
     <title>Polygraph</title>
     <link rel="stylesheet" type="text/css" href="css/polygraph.css" media="screen" />
     <script src="js/polygraph.js"></script>
+    <script src="js/net.js"></script>
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -12,12 +13,6 @@
     <canvas id="polygraph"></canvas>
     <div id="legend"></div>
     <script>
-      function get(url) {
-        var request = new XMLHttpRequest();
-        request.open("GET", url, false);
-        request.send(null);
-        return request.responseText;
-      };
       document.querySelector("div#legend").innerHTML = get('legend.html');
       var spec = JSON.parse(get('json/spec.json'));
       polygraph(spec);
