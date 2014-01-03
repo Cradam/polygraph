@@ -1,15 +1,15 @@
-all: public/assets/img/harem.svg public/assets/spec.json public/legend.html
+all: http/img/harem.svg http/json/spec.json http/legend.html
 
 .PHONY: all clean 
 
-public/assets/spec.json: data/harem.dot
-	bin/mkspec data/harem.dot > public/assets/json/spec.json
+http/json/spec.json: data/harem.dot
+	bin/mkspec data/harem.dot > http/json/spec.json
 
-public/legend.html: data/harem.dot
-	bin/mklegend data/harem.dot > public/legend.html
+http/legend.html: data/harem.dot
+	bin/mklegend data/harem.dot > http/legend.html
 
-public/assets/img/harem.svg: data/harem.dot
-	dot -Tsvg data/harem.dot -o public/assets/img/harem.svg
+http/img/harem.svg: data/harem.dot
+	dot -Tsvg data/harem.dot -o http/img/harem.svg
 
 clean:
 	git clean -Xfd
