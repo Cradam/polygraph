@@ -1,4 +1,6 @@
 graph harem {
+  platypus [label="MadPlatypus"]
+  patrick -- platypus [color=blue]
   patrick [label="Patrick"]
   vi [label="vi"]
   patrick -- vi [color=green]
