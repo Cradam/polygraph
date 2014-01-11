@@ -1,7 +1,7 @@
 graph harem {
   madplatypus [label="MadPlatypus"]
   patrick -- madplatypus [color=blue]
-  patick [label="Patrick"]
+  patrick [label="Patrick"]
   vi [label="vi"]
   patrick -- vi [color=green]
   leo [label="Leo"]
